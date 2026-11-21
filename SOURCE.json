@@ -1,0 +1,65 @@
+{
+  "article": "https://monero.love/news/p2pool-dashboard/",
+  "recorded_at_utc": "2026-11-21T18:16:04.578385+00:00",
+  "source_kind": "workspace application associated with two live articles",
+  "article_html_sha256": "7dd277d92c0392ce9ccdd86892fc6e4bb66027274c688eba27054ca83c196a22",
+  "files": {
+    ".gitignore": {
+      "sha256": "bcb307293bfda2f99f9d3fa35e90509a0371501c4d8ac788cffbcb4fb69340a2"
+    },
+    "README.md": {
+      "sha256": "6175ad73882299337a31825e23896d826a34482e88d47bc3cf3f37ded64b1c57"
+    },
+    "VALIDATION.md": {
+      "sha256": "3db4d6f3eda986f374b90125c5cf0d38e1b3e982e97cedfe7d6ecb7949b76ea8"
+    },
+    "p2pool-dashboard.env.example": {
+      "sha256": "a9b63bb939809352dacfc44bd05fcf0de65bbf738a6502b439c29600ea167da8"
+    },
+    "p2pool-dashboard.service": {
+      "sha256": "035cef44b6f95fe2f1d8cd5fffaf317bec56449c28e6e6fa56dbf3ac6b6e704f"
+    },
+    "server.py": {
+      "sha256": "5f9677494fde086b766a2c6cbbdc2c9401649b01d739763d9972602e748b6759"
+    },
+    "static/app.js": {
+      "sha256": "660bdf8b87542f15afffba4de7dba6a2a28f6421fb212ec3b13d0ada67faa70d"
+    },
+    "static/favicon.svg": {
+      "sha256": "ed278cfd7fd867c45e2336b08399eead19144ba107d3d522c543f0f103833d80"
+    },
+    "static/index.html": {
+      "sha256": "d25c09e27247e5c1a7ba7815a75213823a61845a19d57b8adf262c3b2713ec35"
+    },
+    "static/robots.txt": {
+      "sha256": "43fe06c8a24bcc38d15e8b172684f2f1790d7c505a040b717f092155fd25fd08"
+    },
+    "static/style.css": {
+      "sha256": "267c09bae988d650b8ceb03a9e3e39b9897cbbdc7f2220713cbaa8bf3b7cc752"
+    },
+    "test_app.cjs": {
+      "sha256": "c0742747956c98d9a07d9562c806ccfaa82b0fe36be82980aa5e2634a2e22fc6"
+    },
+    "test_server.py": {
+      "sha256": "59cbe20d51e2497b5128bbf9d1f2d82adadd0c5882335ad8fc31f08af18c15ec"
+    }
+  },
+  "related_article": "https://monero.love/news/how-we-collect-p2pool-statistics-and-verify-payouts/",
+  "original_workspace_hashes": {
+    "README.md": "8bf57e113328b140fdded3402a96f69cd394386a3361a463af9fb89e34359941",
+    "p2pool-dashboard.service": "aeb07ca93f158429b856f0d25ab6fb928afd5509be493e2c6af4b00d3c30881e",
+    "server.py": "5f9677494fde086b766a2c6cbbdc2c9401649b01d739763d9972602e748b6759",
+    "static/app.js": "7c6e228c0d905282dbe7c5f853f1273d7431e743a6e9ef3d7c8ccf64b481a44d",
+    "static/favicon.svg": "ed278cfd7fd867c45e2336b08399eead19144ba107d3d522c543f0f103833d80",
+    "static/index.html": "d25c09e27247e5c1a7ba7815a75213823a61845a19d57b8adf262c3b2713ec35",
+    "static/robots.txt": "43fe06c8a24bcc38d15e8b172684f2f1790d7c505a040b717f092155fd25fd08",
+    "static/style.css": "267c09bae988d650b8ceb03a9e3e39b9897cbbdc7f2220713cbaa8bf3b7cc752",
+    "test_app.cjs": "c0742747956c98d9a07d9562c806ccfaa82b0fe36be82980aa5e2634a2e22fc6",
+    "test_server.py": "59cbe20d51e2497b5128bbf9d1f2d82adadd0c5882335ad8fc31f08af18c15ec"
+  },
+  "adaptations": [
+    "UTC display timestamps in static/app.js",
+    "EnvironmentFile in service unit",
+    "Portable README and example environment file"
+  ]
+}

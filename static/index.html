@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>P2Pool Live Shares &amp; Payouts | Monero Love</title>
+<meta name="description" content="Live public P2Pool statistics for Main, Mini and Nano. Follow shares, block rewards, payout outputs and pool hashrate.">
+<link rel="canonical" href="https://p2pool.monero.love/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+<div class="intro"><div><p class="eyebrow">MONERO / PUBLIC POOL STATS</p><h1>P2Pool<span class="title-dot">.</span></h1><p class="subtitle">Every share counts.</p><p class="note">Live data from Monero Love observers.</p></div><div class="tools"><a class="onion-link" href="http://p2pool.monerodgop4pkzfq2exi3tms4u5vsayfsiri62gc3s45gosske2hszqd.onion/" aria-label="Open P2Pool over Tor">Tor ↗</a><button id="theme" type="button" aria-label="Switch color theme">Dark mode</button><p id="status" role="status">Connecting to observers</p><span id="updated">Refreshes every 30 seconds</span></div></div>
+<div class="pool-tabs" role="navigation" aria-label="Jump to sidechain">
+<a href="#chain-main"><span class="pool-name">Main <span>01</span></span><span class="pool-rate" id="rate-main">Loading</span><span class="pool-caption" id="caption-main">Public sidechain</span></a>
+<a href="#chain-mini"><span class="pool-name">Mini <span>02</span></span><span class="pool-rate" id="rate-mini">Loading</span><span class="pool-caption" id="caption-mini">Public sidechain</span></a>
+<a href="#chain-nano"><span class="pool-name">Nano <span>03</span></span><span class="pool-rate" id="rate-nano">Loading</span><span class="pool-caption" id="caption-nano">Public sidechain</span></a>
+</div>
+<section class="chain-dashboard" id="chain-main" aria-labelledby="main-heading"><div class="selected-line"><h2 id="main-heading"><span id="main-pool-label">Main</span> sidechain</h2><a id="main-source" href="https://p2pool.observer/" target="_blank" rel="noopener noreferrer">Public explorer ↗</a></div>
+<p id="main-warning" class="warning" role="status" hidden></p>
+<div class="metrics">
+<section><h3>Shares in window</h3><div class="metric" id="main-window-shares">…</div><p id="main-uncle-count">PPLNS window</p></section>
+<section><h3>Miners in window</h3><div class="metric" id="main-miners">…</div><p>Contributing to this window</p></section>
+<section><h3>Latest block reward</h3><div class="metric" id="main-reward">…</div><p id="main-reward-age">Waiting for observer</p></section>
+<section><h3>Current effort</h3><div class="metric" id="main-effort">…</div><p>100% is the statistical average</p></section>
+</div>
+<div class="visuals">
+<section class="panel activity-panel"><div class="section-top"><div><p class="eyebrow">THE SIDECHAIN, LIVE</p><h2>Share activity</h2></div><span class="pill" id="main-share-target">Loading</span></div><div class="share-summary"><strong id="main-latest-share">…</strong><span>latest share</span></div><div id="main-share-strip" class="share-strip" aria-label="Recent shares in chronological order"></div><div class="chart-labels"><span id="main-share-start">Waiting for shares</span><span>Latest →</span></div><p class="note" id="main-share-note">The latest 60 observed shares. Select a share to inspect it.</p></section>
+<section class="panel rewards-panel"><div class="section-top"><div><p class="eyebrow">MONERO BLOCK REWARDS</p><h2>Recent payouts</h2></div><span class="pill">XMR / block</span></div><div class="reward-summary"><strong id="main-reward-total">…</strong><span id="main-reward-context">across recent blocks</span></div><svg id="main-reward-chart" viewBox="0 0 600 140" role="img" aria-label="Rewards for the latest observed Monero blocks"></svg><div class="chart-labels"><span id="main-reward-start">Waiting for blocks</span><span>Latest →</span></div><p class="note">Total coinbase reward per found block, shared across its payout outputs.</p></section>
+</div>
+<details class="payouts"><summary class="section-top"><div><p class="eyebrow">RECENTLY FOUND BLOCKS</p><h2>Payout ledger</h2></div><span class="note">Expand ledger · latest 20 blocks</span></summary><div class="table-scroll" tabindex="0" role="region" aria-label="Recent payout blocks"><table><thead><tr><th>Block</th><th>Found</th><th>Reward</th><th>Payouts per block</th><th>Confirmations</th><th>Details</th></tr></thead><tbody id="main-ledger"><tr><td colspan="6">Waiting for our observer data…</td></tr></tbody></table></div><p class="note">Rewards are pool-wide block totals. Select a payout count to see every output amount in that block. Newly found blocks can still be reorganized. History includes blocks recorded by our observers.</p></details>
+</section>
+<section class="chain-dashboard" id="chain-mini" aria-labelledby="mini-heading"><div class="selected-line"><h2 id="mini-heading"><span id="mini-pool-label">Mini</span> sidechain</h2><a id="mini-source" href="https://p2pool.observer/" target="_blank" rel="noopener noreferrer">Public explorer ↗</a></div>
+<p id="mini-warning" class="warning" role="status" hidden></p>
+<div class="metrics">
+<section><h3>Shares in window</h3><div class="metric" id="mini-window-shares">…</div><p id="mini-uncle-count">PPLNS window</p></section>
+<section><h3>Miners in window</h3><div class="metric" id="mini-miners">…</div><p>Contributing to this window</p></section>
+<section><h3>Latest block reward</h3><div class="metric" id="mini-reward">…</div><p id="mini-reward-age">Waiting for observer</p></section>
+<section><h3>Current effort</h3><div class="metric" id="mini-effort">…</div><p>100% is the statistical average</p></section>
+</div>
+<div class="visuals">
+<section class="panel activity-panel"><div class="section-top"><div><p class="eyebrow">THE SIDECHAIN, LIVE</p><h2>Share activity</h2></div><span class="pill" id="mini-share-target">Loading</span></div><div class="share-summary"><strong id="mini-latest-share">…</strong><span>latest share</span></div><div id="mini-share-strip" class="share-strip" aria-label="Recent shares in chronological order"></div><div class="chart-labels"><span id="mini-share-start">Waiting for shares</span><span>Latest →</span></div><p class="note" id="mini-share-note">The latest 60 observed shares. Select a share to inspect it.</p></section>
+<section class="panel rewards-panel"><div class="section-top"><div><p class="eyebrow">MONERO BLOCK REWARDS</p><h2>Recent payouts</h2></div><span class="pill">XMR / block</span></div><div class="reward-summary"><strong id="mini-reward-total">…</strong><span id="mini-reward-context">across recent blocks</span></div><svg id="mini-reward-chart" viewBox="0 0 600 140" role="img" aria-label="Rewards for the latest observed Monero blocks"></svg><div class="chart-labels"><span id="mini-reward-start">Waiting for blocks</span><span>Latest →</span></div><p class="note">Total coinbase reward per found block, shared across its payout outputs.</p></section>
+</div>
+<details class="payouts"><summary class="section-top"><div><p class="eyebrow">RECENTLY FOUND BLOCKS</p><h2>Payout ledger</h2></div><span class="note">Expand ledger · latest 20 blocks</span></summary><div class="table-scroll" tabindex="0" role="region" aria-label="Recent payout blocks"><table><thead><tr><th>Block</th><th>Found</th><th>Reward</th><th>Payouts per block</th><th>Confirmations</th><th>Details</th></tr></thead><tbody id="mini-ledger"><tr><td colspan="6">Waiting for our observer data…</td></tr></tbody></table></div><p class="note">Rewards are pool-wide block totals. Select a payout count to see every output amount in that block. Newly found blocks can still be reorganized. History includes blocks recorded by our observers.</p></details>
+</section>
+<section class="chain-dashboard" id="chain-nano" aria-labelledby="nano-heading"><div class="selected-line"><h2 id="nano-heading"><span id="nano-pool-label">Nano</span> sidechain</h2><a id="nano-source" href="https://p2pool.observer/" target="_blank" rel="noopener noreferrer">Public explorer ↗</a></div>
+<p id="nano-warning" class="warning" role="status" hidden></p>
+<div class="metrics">
+<section><h3>Shares in window</h3><div class="metric" id="nano-window-shares">…</div><p id="nano-uncle-count">PPLNS window</p></section>
+<section><h3>Miners in window</h3><div class="metric" id="nano-miners">…</div><p>Contributing to this window</p></section>
+<section><h3>Latest block reward</h3><div class="metric" id="nano-reward">…</div><p id="nano-reward-age">Waiting for observer</p></section>
+<section><h3>Current effort</h3><div class="metric" id="nano-effort">…</div><p>100% is the statistical average</p></section>
+</div>
+<div class="visuals">
+<section class="panel activity-panel"><div class="section-top"><div><p class="eyebrow">THE SIDECHAIN, LIVE</p><h2>Share activity</h2></div><span class="pill" id="nano-share-target">Loading</span></div><div class="share-summary"><strong id="nano-latest-share">…</strong><span>latest share</span></div><div id="nano-share-strip" class="share-strip" aria-label="Recent shares in chronological order"></div><div class="chart-labels"><span id="nano-share-start">Waiting for shares</span><span>Latest →</span></div><p class="note" id="nano-share-note">The latest 60 observed shares. Select a share to inspect it.</p></section>
+<section class="panel rewards-panel"><div class="section-top"><div><p class="eyebrow">MONERO BLOCK REWARDS</p><h2>Recent payouts</h2></div><span class="pill">XMR / block</span></div><div class="reward-summary"><strong id="nano-reward-total">…</strong><span id="nano-reward-context">across recent blocks</span></div><svg id="nano-reward-chart" viewBox="0 0 600 140" role="img" aria-label="Rewards for the latest observed Monero blocks"></svg><div class="chart-labels"><span id="nano-reward-start">Waiting for blocks</span><span>Latest →</span></div><p class="note">Total coinbase reward per found block, shared across its payout outputs.</p></section>
+</div>
+<details class="payouts"><summary class="section-top"><div><p class="eyebrow">RECENTLY FOUND BLOCKS</p><h2>Payout ledger</h2></div><span class="note">Expand ledger · latest 20 blocks</span></summary><div class="table-scroll" tabindex="0" role="region" aria-label="Recent payout blocks"><table><thead><tr><th>Block</th><th>Found</th><th>Reward</th><th>Payouts per block</th><th>Confirmations</th><th>Details</th></tr></thead><tbody id="nano-ledger"><tr><td colspan="6">Waiting for our observer data…</td></tr></tbody></table></div><p class="note">Rewards are pool-wide block totals. Select a payout count to see every output amount in that block. Newly found blocks can still be reorganized. History includes blocks recorded by our observers.</p></details>
+</section>
+<noscript><p>This live dashboard needs JavaScript. Public data is also available at <a href="https://p2pool.observer/">P2Pool Observer</a>.</p></noscript>
+</main>
+</body></html>
